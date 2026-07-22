@@ -16,12 +16,17 @@ export async function GET() {
 
   } catch (error) {
 
+    console.error(error);
+
     return NextResponse.json(
-      { erro: "Erro ao buscar movimentações" },
+      { 
+        erro: "Erro ao buscar movimentações",
+        detalhe: String(error)
+      },
       { status: 500 }
     );
 
-  }
+}
 }
 
 
