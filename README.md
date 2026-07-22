@@ -1,5 +1,9 @@
 # 💰 Finance Control
 
+🔗 Projeto online:
+
+https://finance-control-xxxx.vercel.app/dashboard
+
 Sistema de controle financeiro pessoal desenvolvido com **Next.js**, **React**, **TypeScript**, **Tailwind CSS**, **Prisma ORM** e **SQLite**.
 
 O projeto tem como objetivo auxiliar no gerenciamento de receitas, despesas e metas financeiras através de uma interface moderna, responsiva e intuitiva.
