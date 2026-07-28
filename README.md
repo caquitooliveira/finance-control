@@ -1,30 +1,49 @@
-# 💰 Finance Control
+💰 Finance Control
 
 🔗 Projeto online:
 
-https://finance-control-xxxx.vercel.app/dashboard
+https://finance-control-xxxx.vercel.app
 
-Sistema de controle financeiro pessoal desenvolvido com **Next.js**, **React**, **TypeScript**, **Tailwind CSS**, **Prisma ORM** e **SQLite**.
+Sistema de controle financeiro pessoal desenvolvido com Next.js, React, TypeScript, Tailwind CSS, Prisma ORM e PostgreSQL.
 
 O projeto tem como objetivo auxiliar no gerenciamento de receitas, despesas e metas financeiras através de uma interface moderna, responsiva e intuitiva.
 
-A aplicação conta com dashboard financeiro, gráficos, CRUD completo, persistência de dados e tema claro/escuro.
+A aplicação conta com dashboard financeiro, gráficos, CRUD completo, autenticação de usuários, persistência de dados em banco PostgreSQL e tema claro/escuro.
 
----
+🚀 Funcionalidades
 
-## 🚀 Funcionalidades
+✅ Cadastro de usuários
 
-✅ Dashboard financeiro com resumo geral  
-✅ Cadastro de receitas e despesas  
-✅ Edição e exclusão de movimentações  
-✅ Gerenciamento de metas financeiras  
-✅ Acompanhamento de progresso das metas  
-✅ Relatórios financeiros  
-✅ Gráficos utilizando Recharts  
-✅ Tema claro e Dark Mode  
-✅ Interface responsiva para desktop e mobile  
-✅ API Routes com Next.js  
-✅ Persistência de dados utilizando Prisma + SQLite  
+✅ Login com autenticação segura
+
+✅ Logout
+
+✅ Proteção de rotas privadas
+
+✅ Dashboard financeiro com resumo geral
+
+✅ Cadastro de receitas e despesas
+
+✅ Edição e exclusão de movimentações
+
+✅ Gerenciamento de metas financeiras
+
+✅ Acompanhamento de progresso das metas
+
+✅ Relatórios financeiros
+
+✅ Gráficos utilizando Recharts
+
+✅ Tema claro e Dark Mode
+
+✅ Interface responsiva para desktop e mobile
+
+✅ API Routes utilizando Next.js
+
+✅ Persistência de dados utilizando Prisma + PostgreSQL
+
+✅ Dados financeiros separados por usuário
+
 
 ---
 
@@ -62,89 +81,108 @@ A aplicação conta com dashboard financeiro, gráficos, CRUD completo, persist�
 
 ---
 
-# 🛠 Tecnologias utilizadas
+🛠 Tecnologias utilizadas
 
-## Front-End
+Front-End
 
-- Next.js 16
-- React
-- TypeScript
-- Tailwind CSS v4
-- Lucide React
-- Recharts
+Next.js 16
 
+React
 
-## Back-End
+TypeScript
 
-- Next.js API Routes
-- Prisma ORM
-- SQLite
+Tailwind CSS v4
 
+Lucide React
 
-## Ferramentas
+Recharts
 
-- Git
-- GitHub
-- VS Code
-- npm
+Back-End
 
----
+Next.js API Routes
 
-# 📂 Estrutura do projeto
+Prisma ORM
 
-```bash
-finance-control
-│
-├── app
-│   ├── api
-│   │   ├── movimentacoes
-│   │   ├── metas
-│   │   └── relatorios
-│   │
-│   └── (app)
-│       ├── dashboard
-│       ├── movimentacoes
-│       ├── metas
-│       ├── relatorios
-│       └── configuracoes
-│
-├── components
-│   ├── dashboard
-│   ├── layout
-│   ├── metas
-│   └── ui
-│
-├── prisma
-│   └── schema.prisma
-│
-└── utils
+PostgreSQL (Neon)
+
+Auth.js
+
+bcrypt
+
+Ferramentas
+
+Git / GitHub / VS Code / npm / Vercel
+
+🔐 Autenticação
+
+A aplicação utiliza autenticação baseada em sessão através do Auth.js, incluindo:
+
+Cadastro de usuários
+
+Login utilizando credenciais
+
+Senhas protegidas com bcrypt
+
+Sessão persistente
+
+Middleware para proteção de páginas privadas
+
 ▶️ Como executar o projeto
-Clone o repositório
-git clone URL_DO_REPOSITORIO
-Entre na pasta
+
+Clone o repositório:
+
+git clone https://github.com/caquitooliveira/finance-control.git
+
+Entre na pasta:
+
 cd finance-control
-Instale as dependências
+
+Instale as dependências:
+
 npm install
-Execute o projeto
+
+Configure as variáveis de ambiente:
+
+DATABASE_URL=
+NEXTAUTH_SECRET=
+
+Execute o projeto:
+
 npm run dev
 
 Acesse:
 
 http://localhost:3000
+
 📚 Aprendizados
 
 Durante o desenvolvimento deste projeto foram aplicados conceitos como:
 
 Desenvolvimento com Next.js App Router
-Criação de APIs utilizando Route Handlers
-Gerenciamento de estado com React
-Componentização
-Tipagem com TypeScript
-Integração com banco de dados utilizando Prisma
-Criação de interfaces responsivas
-Implementação de Dark Mode
-👨‍💻 Desenvolvido por
 
-Caio Oliveira
+Criação de APIs utilizando Route Handlers
+
+Autenticação e proteção de rotas
+
+Gerenciamento de sessão
+
+Componentização com React
+
+Tipagem utilizando TypeScript
+
+Integração com banco de dados utilizando Prisma
+
+Migração e utilização de PostgreSQL
+
+Criação de interfaces responsivas
+
+Implementação de Dark Mode
+
+Deploy em ambiente de produção utilizando Vercel
+
+👨‍💻 Desenvolvido por: Caio Oliveira
+
+Front-End Developer em evolução 🚀
+
 
 Front-End Developer em evolução 🚀
