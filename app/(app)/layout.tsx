@@ -1,11 +1,23 @@
 import Cabecalho from "@/components/layout/Cabecalho";
 import Sidebar from "@/components/layout/Sidebar";
+import { auth } from "@/auth";
+import { redirect } from "next/navigation";
 
-export default function AppLayout({
+
+export default async function AppLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+
+  const session = await auth ();
+
+  console.log(session);
+  
+if (!session) {
+  redirect("/login");
+}
+
   return (
     <div
       className="

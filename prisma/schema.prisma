@@ -14,6 +14,9 @@ model Movimentacao {
   tipo        String
   categoria   String
   data        DateTime @default(now())
+
+  userId      String
+  user        User @relation(fields: [userId], references: [id])
 }
 
 model Meta {
@@ -22,5 +25,18 @@ model Meta {
   valorMeta   Float
   valorAtual  Float
   createdAt   DateTime @default(now())
+
+  userId      String
+  user        User @relation(fields: [userId], references: [id])
 }
 
+model User {
+  id        String   @id @default(cuid())
+  nome      String
+  email     String   @unique
+  senha     String
+  createdAt DateTime @default(now())
+
+  movimentacoes Movimentacao[]
+  metas         Meta[]
+}
